@@ -3,4 +3,3 @@ application/cache/*
 application/logs/*
 images/logos/*
 images/projects/*
-modules/database/config/database.php

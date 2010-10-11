@@ -70,15 +70,16 @@ div#header a:hover { text-decoration: none;  }
 
 ------------------------------------------------------------------------*/
 
-ul#twitter-feed { font-size: 10px; width: 200px;  }
-ul#twitter-feed li { margin-bottom: 10px; }
+div#twitter-feed ul { font-size: 10px; width: 250px; height: 250px; overflow: auto;  }
+div#twitter-feed ul li { margin-bottom: 10px; }
+
 blockquote#edito {
-    width: 50%;
+    width: 60%;
     float: left;
 }
 
-ul#twitter-feed {
-    width: 50%;
+div#twitter-feed {
+    width: 30%;
     float: right;
 }
 
