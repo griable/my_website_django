@@ -1,0 +1,86 @@
+/*------------------------------------------------------------------------
+
+    * Filename:             slideshow.css
+    * Description:          Slideshow layout
+    * Version:              1.0.0
+    * Author:               griable
+    
+    ==STRUCTURE:==========================================================
+    
+    * Element width:         750px
+    
+    $__common               Common definitions
+    $__legend               legend layout
+
+------------------------------------------------------------------------*/
+
+
+/*      __common
+
+------------------------------------------------------------------------*/
+
+
+div#caroussel {
+	position: relative;
+	height: 366px;
+	width: 748px;
+	border: 1px solid #ddd;
+	background-color: white;
+	overflow: hidden;
+}
+
+div#caroussel-container {
+	position: absolute;
+	width: 10000px;
+}
+
+div.caroussel-element {
+    text-align: center;
+	float: left;
+	
+	position: relative;
+	height: 366px;
+	width: 748px;
+}
+
+/*      __description
+
+------------------------------------------------------------------------*/
+
+div.caroussel-element div.details {
+	position: absolute;
+	top: 0;
+	right: 0;
+	
+	height: 366px;
+	width: 220px;
+	
+	background: #333;
+	opacity : 0.8;
+    -moz-opacity : 0.8;
+    -ms-filter: "alpha(opacity=80)"; /* IE 8 */ 
+    filter : alpha(opacity=80); /* IE < 8 */ 
+    
+    text-align: left;
+    
+    border-left: 1px solid #999;
+}
+
+div.caroussel-element div.details dl {
+	position: absolute;
+	bottom: 0;
+	
+	font-family: FuturaLightBT;
+	color: white;
+	
+	padding: 0 10px;
+}
+
+div.caroussel-element div.details dl dt {
+	font-family: FuturaLightBT;	
+	font-size: 16px;
+}
+
+div.caroussel-element div.details dl dd {
+	margin-bottom: 20px;
+}

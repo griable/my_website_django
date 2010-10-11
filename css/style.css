@@ -1,0 +1,161 @@
+/*------------------------------------------------------------------------
+
+    * Filename:             style.css
+    * Description:          Global CSS
+    * Version:              1.0.0
+    * Author:               griable
+    
+    ==STRUCTURE:==========================================================
+    
+    * Pqge width:           960px
+    
+    $__common               Common definitions
+    $__header               header layout
+    $__home                 Twitter & edito
+    $__experiences          experience & studies
+    $__projects             projects gallery
+    $__project              project detail
+    $__skills               skills styles
+
+------------------------------------------------------------------------*/
+
+
+/*      __common
+
+------------------------------------------------------------------------*/
+
+body, html { width: 100%; height: 100%; font-family: FuturaLightBT, Helvetica, Arial, sans-serif; font-size: 15px; background-color: #F2F2F2; }
+
+/* columns layout */
+div#container { width: 960px; margin: 20px auto; }
+ul#menu { float: left; width: 190px; height: 150px; font-size: 24px; text-transform: uppercase; font-family: FuturaLightBT, Helvetica, Arial, sans-serif; }
+ul#menu li { margin-bottom: 10px; }
+div#content { float: right; width: 750px; }
+
+/* titres */
+h2 { font-size: 24px; font-family: FuturaLightBT, Helvetica, Arial, sans-serif; text-transform: uppercase; margin-bottom: 10px; }
+h3 { font-size: 22px; font-family: FuturaLightBT, Helvetica, Arial, sans-serif; color: #FF7800; }
+h4 { font-size: 18px; font-family: FuturaLightBT; }
+
+/* links */
+a { color: #00ADEF; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* accronym */
+accronym { border-bottom: 1px dotted; cursor: help;  }
+
+/* fonts */
+@font-face { font-family: FuturaBold; src: url('fonts/Futura Bold BT.ttf'); } 
+@font-face { font-family: FuturaNormal; src: url('fonts/Futura Normal.TTF'); } 
+@font-face { font-family: FuturaLightBT; src: url('fonts/Futura Light BT.ttf'); } 
+
+/* clearfix */
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+.clearfix { display: inline-block; }
+html[xmlns] .clearfix { display: block; }
+* html .clearfix { height: 1%; }
+
+
+/*      __header
+
+------------------------------------------------------------------------*/
+
+div#header { font-family: FuturaBold, Helvetica, Arial, sans-serif; background: url('images/logo.png') no-repeat; padding-left: 120px; height: 120px; }
+div#header h1 { font-size: 40px; padding: 15px 0 5px 0; }
+div#header a { color: black;  }
+div#header a:hover { text-decoration: none;  }
+
+
+/*      __home
+
+------------------------------------------------------------------------*/
+
+ul#twitter-feed { font-size: 10px; width: 200px;  }
+ul#twitter-feed li { margin-bottom: 10px; }
+blockquote#edito {
+    width: 50%;
+    float: left;
+}
+
+ul#twitter-feed {
+    width: 50%;
+    float: right;
+}
+
+
+
+/*      __experiences
+
+------------------------------------------------------------------------*/
+
+div.experience { padding: 20px 50px 20px 20px; border: 1px solid #DDD; border-bottom: none; background-color: white; }
+div.experience:last-child { border-bottom: 1px solid #DDD; }  
+div.freelance { background-image: url('images/freelance.png'); background-position: top right; background-repeat: no-repeat; }
+div.experience h2 { margin-bottom: 10px; }
+div.experience h3 { margin-bottom: 5px; }
+div.experience a.logo {
+  float: right;
+  padding-top: 20px;
+  padding-left: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+div.experience a.logo:hover {
+  -webkit-transform: rotate(15deg) scale(1.5);
+  -moz-transform: rotate(15deg) scale(1.5);
+  -o-transform: rotate(15deg) scale(1.5);
+}
+
+
+/*      __projects
+
+------------------------------------------------------------------------*/
+
+ul#gallery { border-left: 1px solid #ddd; border-top: 1px solid #ddd; }
+ul#gallery li { display: block; float: left; text-align: center; width: 25%; }
+ul#gallery li img { padding-bottom: 5px; }
+ul#gallery li a {
+    display: block;
+    padding: 10px 10px 5px 10px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-top: none;
+    background-color: white;
+    color: black;
+}
+ul#gallery li a:hover { background-color: #666; text-decoration: none; color: white; }
+
+
+/*      __project
+
+------------------------------------------------------------------------*/
+
+/*todo remove  */
+div#project img { margin: 0 auto; width: 588px; display: block; }
+
+div#project {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px 0 20px 20px;
+    position: relative;
+}
+div#project a#previous-link, div#project a#next-link {
+    position: absolute;
+    top: 150px;
+    background-color: white;
+    padding: 7px 10px;
+    border: 1px dotted#DDD;
+}
+div#project a#back-link { position: absolute; top: 0; left: 0; padding: 10px; }
+div#project a#previous-link:hover, div#project a#next-link:hover; { text-decoration: none; }
+div#project a#previous-link { left: 0; border-left: none;  }
+div#project a#next-link { right: 0; border-left: right; }
+
+/*      __skills
+
+------------------------------------------------------------------------*/
+
+ul.skills { margin-top: 15px; }
+ul.skills li { margin-right: 3px; background-color: #000; color: white; display: inline; padding: 3px 4px; border-radius: 5px; font-size: 12px; text-transform: lowercase; }
+ul.skills li accronym { border-bottom:none; }
